@@ -11,8 +11,12 @@ config_version=3
 [application]
 
 config/name="DungeonDanger"
-run/main_scene="res://Scenes/Level1.tscn"
+run/main_scene="res://Scenes/HomeScreen.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+dir="*res://Script/directions.gd"
 
 [rendering]
 

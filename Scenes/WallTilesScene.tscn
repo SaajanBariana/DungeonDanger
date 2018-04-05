@@ -11,7 +11,7 @@ extents = Vector2( 50, 10 )
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 50, 20 )
+extents = Vector2( 48.8957, 20 )
 
 [node name="Node" type="Node"]
 
@@ -35,19 +35,20 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WallBottom/StaticBody2D" index="0"]
 
-position = Vector2( 0, -10 )
+position = Vector2( 0, 2 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="WallTop" type="Sprite" parent="." index="1"]
 
-position = Vector2( 150, 50 )
+position = Vector2( 258.964, 48.8994 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="WallTop" index="0"]
 
-position = Vector2( 50, 50 )
+position = Vector2( -0.041872, 0.502228 )
+scale = Vector2( 1.56255, 1.55411 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -59,6 +60,23 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WallTop/StaticBody2D" index="0"]
 
+position = Vector2( -0.0587463, 0.940931 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallTop/StaticBody2D" index="1"]
+
+position = Vector2( 48.2618, -0.325334 )
+rotation = 1.5708
+scale = Vector2( 0.656722, 0.02022 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WallTop/StaticBody2D" index="2"]
+
+position = Vector2( -48.4341, 0.0457171 )
+rotation = 1.5708
+scale = Vector2( 0.656722, 0.0276788 )
 shape = SubResource( 2 )
 _sections_unfolded = [ "Transform" ]
 

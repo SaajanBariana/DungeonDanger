@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/StartingPhrase.wav-0f5a0e062a7f94fcf27d3eb0c5c21b0a.sample"
+
+[deps]
+
+source_file="res://Sounds/StartingPhrase.wav"
+source_md5="27f290c734c8c0cb4e5ad79585697c58"
+
+dest_files=[ "res://.import/StartingPhrase.wav-0f5a0e062a7f94fcf27d3eb0c5c21b0a.sample" ]
+dest_md5="95434acad6ca2435c33a662bc80bf9dc"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
