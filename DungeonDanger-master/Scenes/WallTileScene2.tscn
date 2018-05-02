@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Images/Tiles/DungeonWallBottom.JPG" type="Texture" id=1]
+[ext_resource path="res://Images/Tiles/DungeonWallTop.JPG" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 49.6744, 39.1063 )
+
+[node name="Node" type="Node"]
+
+[node name="Wall1" type="Sprite" parent="." index="0"]
+
+position = Vector2( 127.567, -0.158463 )
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Offset" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall1" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1/StaticBody2D" index="0"]
+
+position = Vector2( 50.0717, 35.9287 )
+scale = Vector2( 1, 0.582624 )
+shape = SubResource( 1 )
+
+[node name="Wall2" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/StaticBody2D" index="0"]
+
+position = Vector2( 49.818, 46.9958 )
+scale = Vector2( 1, 0.983236 )
+shape = SubResource( 1 )
+
+

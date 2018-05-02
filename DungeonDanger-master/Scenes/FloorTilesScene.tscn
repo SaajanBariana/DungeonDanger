@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Images/Tiles/ground1.png" type="Texture" id=1]
+[ext_resource path="res://Images/Tiles/groun2.png" type="Texture" id=2]
+
+[node name="Node" type="Node"]
+
+[node name="Ground1" type="Sprite" parent="." index="0"]
+
+position = Vector2( 200, 0 )
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Offset" ]
+
+[node name="Ground2" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset" ]
+
+

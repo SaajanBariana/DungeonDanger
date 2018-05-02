@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/PlayerAttackSound.wav-211b426000e18cbd399608036e0bf80a.sample"
+
+[deps]
+
+source_file="res://Sounds/PlayerAttackSound.wav"
+source_md5="9afeddbf58e320c3781d7f3d79bbff06"
+
+dest_files=[ "res://.import/PlayerAttackSound.wav-211b426000e18cbd399608036e0bf80a.sample" ]
+dest_md5="d530a7e5f9fb2826a0d2ac7392b45dff"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
