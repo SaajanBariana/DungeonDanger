@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/RangedDead.wav-8216e3a8d29434d2c700adc7fecb917f.sample"
+
+[deps]
+
+source_file="res://Sounds/RangedDead.wav"
+source_md5="db3460501c308ccf2df126e632cf945a"
+
+dest_files=[ "res://.import/RangedDead.wav-8216e3a8d29434d2c700adc7fecb917f.sample" ]
+dest_md5="22aa4d9d64483413c923701f3740ebde"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

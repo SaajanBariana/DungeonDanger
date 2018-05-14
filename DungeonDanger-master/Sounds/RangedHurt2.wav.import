@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/RangedHurt2.wav-653c7f842bc108922e36a0fa20ce0424.sample"
+
+[deps]
+
+source_file="res://Sounds/RangedHurt2.wav"
+source_md5="503eb707e348b3171500a2f512bd14a7"
+
+dest_files=[ "res://.import/RangedHurt2.wav-653c7f842bc108922e36a0fa20ce0424.sample" ]
+dest_md5="b50d36e0bffedaf9efb50c8e913ff19d"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

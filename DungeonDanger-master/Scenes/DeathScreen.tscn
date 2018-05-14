@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Script/DeathScreen.gd" type="Script" id=1]
 [ext_resource path="res://Images/Items/DeadText.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Images/Items/DeadQuitText.png" type="Texture" id=6]
 [ext_resource path="res://Images/Items/DeadQuitTextHover.png" type="Texture" id=7]
 [ext_resource path="res://Script/DeadScreenQuitButton.gd" type="Script" id=8]
+[ext_resource path="res://Sounds/LevelFailed.wav" type="AudioStream" id=9]
 
 [node name="Node" type="Node"]
 
@@ -101,5 +102,13 @@ texture_pressed = ExtResource( 7 )
 texture_hover = ExtResource( 7 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="BackgroundSound" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = ExtResource( 9 )
+volume_db = -5.0
+autoplay = true
+mix_target = 0
+bus = "Master"
 
 

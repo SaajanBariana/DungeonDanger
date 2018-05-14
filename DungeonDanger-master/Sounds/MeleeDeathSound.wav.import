@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MeleeDeathSound.wav-e1e613f059424563a7387858e7e42e67.sample"
+
+[deps]
+
+source_file="res://Sounds/MeleeDeathSound.wav"
+source_md5="7818eded904dfd1ee3c35f76ece53974"
+
+dest_files=[ "res://.import/MeleeDeathSound.wav-e1e613f059424563a7387858e7e42e67.sample" ]
+dest_md5="caa41d5f2a48aac555a7632755f440de"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

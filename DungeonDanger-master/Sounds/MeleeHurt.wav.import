@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MeleeHurt.wav-ea800e5d99548ed4b5f5b93f6a834f31.sample"
+
+[deps]
+
+source_file="res://Sounds/MeleeHurt.wav"
+source_md5="96b61b340e086c5035d500c8b82756a7"
+
+dest_files=[ "res://.import/MeleeHurt.wav-ea800e5d99548ed4b5f5b93f6a834f31.sample" ]
+dest_md5="6992c7811bb531c626a0ccce0ec4c31c"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

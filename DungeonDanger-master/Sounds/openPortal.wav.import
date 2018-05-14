@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/openPortal.wav-d1bb521ed051634b8328d068bb7a1e4f.sample"
+
+[deps]
+
+source_file="res://Sounds/openPortal.wav"
+source_md5="c3571054f74cbf4c15190192d63357bb"
+
+dest_files=[ "res://.import/openPortal.wav-d1bb521ed051634b8328d068bb7a1e4f.sample" ]
+dest_md5="d845e8d948538f3baee5b0ac3a141b3b"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

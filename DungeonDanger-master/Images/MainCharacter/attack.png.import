@@ -7,10 +7,10 @@ path="res://.import/attack.png-749de4bb4964de74b126828ff3b92cae.stex"
 [deps]
 
 source_file="res://Images/MainCharacter/attack.png"
-source_md5="0ca8042ed2f684c0c1af33ab8a930cb7"
+source_md5="f20efda55ebc039200e2d44d532d3d47"
 
 dest_files=[ "res://.import/attack.png-749de4bb4964de74b126828ff3b92cae.stex" ]
-dest_md5="5b2d9cd47b92548bbdb374c164f3a527"
+dest_md5="a521eb9d8c95a665a8193daf72878c76"
 
 [params]
 

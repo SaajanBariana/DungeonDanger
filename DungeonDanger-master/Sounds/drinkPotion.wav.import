@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/drinkPotion.wav-7a7ec68a3dfad36aa04690905f493c00.sample"
+
+[deps]
+
+source_file="res://Sounds/drinkPotion.wav"
+source_md5="7b1abf2c2c65bda9328f99e20929fa3c"
+
+dest_files=[ "res://.import/drinkPotion.wav-7a7ec68a3dfad36aa04690905f493c00.sample" ]
+dest_md5="42369d311eb30bac218639f411a21058"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

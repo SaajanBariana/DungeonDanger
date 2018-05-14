@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://TileSets/FloorTiles.tres" type="TileSet" id=1]
+[ext_resource path="res://TileSets/WallTiles2.tres" type="TileSet" id=2]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/MeleeDogEnemy.tscn" type="PackedScene" id=4]
+
+[node name="TestWorld" type="Node"]
+
+[node name="Floor" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 100, 100 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="Wall" type="TileMap" parent="." index="1"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 100, 100 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = true
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 65535, 1, 0, 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 131071, 1, 0, 65536, 1, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 1, 0, 65541, 1, 0, 196607, 1, 0, 131072, 1, 0, 131076, 1, 0, 131077, 1, 0, 262143, 1, 0, 196608, 1, 0, 196612, 1, 0, 196613, 1, 0, 327679, 1, 0, 262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262148, 1, 0, 262149, 1, 0, 393215, 1, 0, 327680, 1, 0, 327681, 1, 0, 327682, 1, 0, 327683, 1, 0, 327684, 1, 0, 327685, 1, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="Player" parent="Wall" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 158.002, 278.567 )
+scale = Vector2( 0.675674, 0.906741 )
+
+[node name="MeleeDogEnemy" parent="Wall" index="1" instance=ExtResource( 4 )]
+
+position = Vector2( 320.44, 329.341 )
+
+[node name="MeleeDogEnemy2" parent="Wall" index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 331.884, 231.429 )
+
+
