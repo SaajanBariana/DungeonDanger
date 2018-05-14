@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/LevelFailed.wav-4143b2dc2eef2d0cc1cb9f08ad68204a.sample"
+
+[deps]
+
+source_file="res://Sounds/LevelFailed.wav"
+source_md5="05a5c7a1ed07c6fef305fe5b9ed5ff5b"
+
+dest_files=[ "res://.import/LevelFailed.wav-4143b2dc2eef2d0cc1cb9f08ad68204a.sample" ]
+dest_md5="e6789f76d60ca3fa0185b2bbcb894e1d"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

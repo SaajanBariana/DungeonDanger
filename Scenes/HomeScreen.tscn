@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Script/HomeScreen.gd" type="Script" id=1]
 [ext_resource path="res://Images/Items/HomeScreenTitle.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Script/DeadScreenQuitButton.gd" type="Script" id=8]
 [ext_resource path="res://Images/MainCharacter/idle.png" type="Texture" id=9]
 [ext_resource path="res://Images/MainCharacter/attack.png" type="Texture" id=10]
+[ext_resource path="res://Sounds/Background.ogg" type="AudioStream" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -122,8 +123,15 @@ position = Vector2( 234, 349 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "Idle"
-frame = 1
 playing = true
 _sections_unfolded = [ "Transform" ]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." index="5"]
+
+stream = ExtResource( 11 )
+volume_db = 0.0
+autoplay = true
+mix_target = 0
+bus = "Master"
 
 

@@ -1,0 +1,247 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Script/Player.gd" type="Script" id=1]
+[ext_resource path="res://Images/MainCharacter/idle.png" type="Texture" id=2]
+[ext_resource path="res://Images/MainCharacter/attack.png" type="Texture" id=3]
+[ext_resource path="res://Images/MainCharacter/back_walk1.png" type="Texture" id=4]
+[ext_resource path="res://Images/MainCharacter/back_walk2.png" type="Texture" id=5]
+[ext_resource path="res://Images/MainCharacter/walk1.png" type="Texture" id=6]
+[ext_resource path="res://Images/MainCharacter/walk2.png" type="Texture" id=7]
+[ext_resource path="res://Images/MainCharacter/walk3.png" type="Texture" id=8]
+[ext_resource path="res://Images/MainCharacter/walk4.png" type="Texture" id=9]
+[ext_resource path="res://Sounds/WalkingSound.wav" type="AudioStream" id=10]
+[ext_resource path="res://Sounds/PlayerAttackSound.wav" type="AudioStream" id=11]
+[ext_resource path="res://Sounds/PlayerHurt.wav" type="AudioStream" id=12]
+[ext_resource path="res://Sounds/StartingPhrase.wav" type="AudioStream" id=13]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 13.0
+height = 25.0
+
+[sub_resource type="CapsuleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 10.0
+height = 31.147
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "WalkingUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "WalkingSideways",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "WalkingDown",
+"speed": 5.0
+} ]
+
+[sub_resource type="StyleBoxFlat" id=4]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.0846774, 0.75, 0.110667, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+_sections_unfolded = [ "Corner Radius" ]
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 13.952, 30.177 )
+
+[node name="Player" type="KinematicBody2D" groups=[
+"Player",
+]]
+
+scale = Vector2( 1.5, 1.5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
+
+position = Vector2( -0.070467, -1.49172 )
+scale = Vector2( 0.995596, 1.05234 )
+shape = SubResource( 1 )
+
+[node name="CollisionWithFloor" type="Area2D" parent="." index="1"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Audio Bus", "Collision", "Pickable", "Transform", "Visibility" ]
+
+[node name="Collision2" type="CollisionShape2D" parent="CollisionWithFloor" index="0"]
+
+position = Vector2( -0.070467, -1.49172 )
+scale = Vector2( 0.995596, 1.05234 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="." index="2"]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 0.25, 0.25 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = false
+smoothing_speed = 6.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.01
+drag_margin_top = 0.0
+drag_margin_right = 0.01
+drag_margin_bottom = 0.01
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Material", "Offset", "Pause", "Smoothing", "Transform", "Visibility", "Z Index" ]
+
+[node name="Sprite" type="AnimatedSprite" parent="." index="3"]
+
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 3 )
+animation = "Attack"
+_sections_unfolded = [ "Transform" ]
+
+[node name="ProgressBar" type="ProgressBar" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -25.0
+margin_top = -45.0
+margin_right = 25.0
+margin_bottom = -29.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+custom_styles/fg = SubResource( 4 )
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+percent_visible = true
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Percent", "Rect", "custom_styles" ]
+
+[node name="AttackRange" type="Area2D" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( -0.302765, 0.145493 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="Collision" type="CollisionShape2D" parent="AttackRange" index="0"]
+
+position = Vector2( -11.3292, -1.1256 )
+scale = Vector2( 1.67182, 1 )
+shape = SubResource( 5 )
+
+[node name="WalkingSound" type="AudioStreamPlayer2D" parent="." index="6"]
+
+stream = ExtResource( 10 )
+volume_db = -10.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="PlayerAttackingSound" type="AudioStreamPlayer2D" parent="." index="7"]
+
+stream = ExtResource( 11 )
+volume_db = -10.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="PlayerHurt" type="AudioStreamPlayer2D" parent="." index="8"]
+
+stream = ExtResource( 12 )
+volume_db = -20.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="StartingPhrase" type="AudioStreamPlayer2D" parent="." index="9"]
+
+stream = ExtResource( 13 )
+volume_db = -10.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+

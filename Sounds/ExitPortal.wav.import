@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ExitPortal.wav-3767112e04b7306e78f4b157e024b5d9.sample"
+
+[deps]
+
+source_file="res://Sounds/ExitPortal.wav"
+source_md5="78d8670720cb66c0e658f37273169852"
+
+dest_files=[ "res://.import/ExitPortal.wav-3767112e04b7306e78f4b157e024b5d9.sample" ]
+dest_md5="893a5a7dbd6d985ee72c40152b6ab442"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,11 +1,16 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Script/MeleeDogEnemy.gd" type="Script" id=1]
 [ext_resource path="res://Images/MeleeMonster/down.png" type="Texture" id=2]
 [ext_resource path="res://Images/MeleeMonster/idle.png" type="Texture" id=3]
-[ext_resource path="res://Images/MeleeMonster/walk1.png" type="Texture" id=4]
-[ext_resource path="res://Images/MeleeMonster/walk2.png" type="Texture" id=5]
-[ext_resource path="res://Images/MeleeMonster/attack.png" type="Texture" id=6]
+[ext_resource path="res://Images/MeleeMonster/attack.png" type="Texture" id=4]
+[ext_resource path="res://Images/MeleeMonster/walk1.png" type="Texture" id=5]
+[ext_resource path="res://Images/MeleeMonster/walk2.png" type="Texture" id=6]
+[ext_resource path="res://Sounds/MeleeEnemySound1.wav" type="AudioStream" id=7]
+[ext_resource path="res://Sounds/MeleeEnemySound2.wav" type="AudioStream" id=8]
+[ext_resource path="res://Sounds/MeleeDeathSound.wav" type="AudioStream" id=9]
+[ext_resource path="res://Sounds/RangedHurt1.wav" type="AudioStream" id=10]
+[ext_resource path="res://Sounds/RangedHurt2.wav" type="AudioStream" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -20,15 +25,15 @@ animations = [ {
 "name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "Walking",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "Attack",
 "speed": 4.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Walking",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -160,5 +165,45 @@ exp_edit = false
 rounded = false
 percent_visible = true
 _sections_unfolded = [ "Margin", "Rect", "custom_colors", "custom_styles" ]
+
+[node name="Attack1" type="AudioStreamPlayer" parent="." index="5"]
+
+stream = ExtResource( 7 )
+volume_db = -15.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Attack2" type="AudioStreamPlayer" parent="." index="6"]
+
+stream = ExtResource( 8 )
+volume_db = -15.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Death" type="AudioStreamPlayer" parent="." index="7"]
+
+stream = ExtResource( 9 )
+volume_db = -10.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Hurt1" type="AudioStreamPlayer" parent="." index="8"]
+
+stream = ExtResource( 10 )
+volume_db = -5.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Hurt2" type="AudioStreamPlayer" parent="." index="9"]
+
+stream = ExtResource( 11 )
+volume_db = -5.0
+autoplay = false
+mix_target = 0
+bus = "Master"
 
 

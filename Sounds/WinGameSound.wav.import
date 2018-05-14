@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/WinGameSound.wav-e83a7030bcb259bbe960d97fa23ce3e3.sample"
+
+[deps]
+
+source_file="res://Sounds/WinGameSound.wav"
+source_md5="62faafba1a57deb33a3c2624af5b4ecb"
+
+dest_files=[ "res://.import/WinGameSound.wav-e83a7030bcb259bbe960d97fa23ce3e3.sample" ]
+dest_md5="f334f5a458790f3838c6eb78c0991f70"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/createKeySound.wav-207917563d7568903ddef5fe46659858.sample"
+
+[deps]
+
+source_file="res://Sounds/createKeySound.wav"
+source_md5="233bdc55d0d77ff18c0cb1e0ad009e12"
+
+dest_files=[ "res://.import/createKeySound.wav-207917563d7568903ddef5fe46659858.sample" ]
+dest_md5="eca4b5c4fc0281ab70ab605cb18ba022"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

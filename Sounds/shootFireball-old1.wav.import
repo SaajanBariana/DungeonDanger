@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/shootFireball-old1.wav-0775dc55465104060c9a4cc8a005ba2d.sample"
+
+[deps]
+
+source_file="res://Sounds/shootFireball-old1.wav"
+source_md5="76b3face7414f3fb410373593f9e0450"
+
+dest_files=[ "res://.import/shootFireball-old1.wav-0775dc55465104060c9a4cc8a005ba2d.sample" ]
+dest_md5="ae9a852ea5efc4d90f72a5697de41781"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

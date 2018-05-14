@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MeleeEnemySound2.wav-d9952e494b1bd8c4ee511812208443ea.sample"
+
+[deps]
+
+source_file="res://Sounds/MeleeEnemySound2.wav"
+source_md5="41d9fc49badfe9f335cf8c5bd48475b8"
+
+dest_files=[ "res://.import/MeleeEnemySound2.wav-d9952e494b1bd8c4ee511812208443ea.sample" ]
+dest_md5="d565bcc312381765559842441c1f28e3"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

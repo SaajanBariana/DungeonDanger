@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="DungeonDanger"
-run/main_scene="res://Scenes/HomeScreen.tscn"
+run/main_scene="res://Scenes/Level2.tscn"
 config/icon="res://icon.png"
 
 [autoload]

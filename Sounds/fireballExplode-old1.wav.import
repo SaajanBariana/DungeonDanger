@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fireballExplode-old1.wav-fe483aec76e1d3839aeb6c47069c13cd.sample"
+
+[deps]
+
+source_file="res://Sounds/fireballExplode-old1.wav"
+source_md5="1e8e84b40b2e497552499655d5574d7d"
+
+dest_files=[ "res://.import/fireballExplode-old1.wav-fe483aec76e1d3839aeb6c47069c13cd.sample" ]
+dest_md5="533c64dd8a1b9aa7898ae9fcf02af587"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
